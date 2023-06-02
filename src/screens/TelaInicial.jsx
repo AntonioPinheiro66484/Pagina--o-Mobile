@@ -1,0 +1,30 @@
+// Screen1.js
+import React from 'react';
+import { View, Text, Button, Image, StyleSheet  } from 'react-native';
+
+
+function Screen1(){
+  return (
+    <View style={styles.container}>
+      <Image
+        source={require('../../assets/Images/banner.png')}
+        style={styles.image}
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  image: {
+    width: 1000,
+    height: 200,
+  },
+});
+
+export default Screen1;

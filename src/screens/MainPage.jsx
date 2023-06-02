@@ -6,7 +6,7 @@ function MainPage({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Pagina Principal</Text>
-      <Button title="Tela1" onPress={() => navigation.navigate('Screen1')} />
+      <Button title="Tela Inicial" onPress={() => navigation.navigate('TelaInicial')} />
       <Button title="Tela2" onPress={() => navigation.navigate('Screen2')} />
       <Button title="Tela3" onPress={() => navigation.navigate('Screen3')} />
       <Button title="Tela4" onPress={() => navigation.navigate('Screen4')} />

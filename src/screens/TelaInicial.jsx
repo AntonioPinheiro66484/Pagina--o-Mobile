@@ -7,7 +7,7 @@ function TelaInicial(){
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../assets/Images/banner.png')}
+        source={require('../screens/assets/banner.png')}
         style={styles.image}
       />
     </View>

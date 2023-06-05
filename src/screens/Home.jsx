@@ -1,4 +1,4 @@
-// MainPage.js
+
 import React from 'react';
 import { View, Text, Button, SafeAreaView } from 'react-native';
 import { StyleSheet } from 'react-native-web';
@@ -11,6 +11,7 @@ function AVBooks({ navigation }) {
       <Text>Pagina Principal</Text>
 
       <Button title="Tela Inicial" onPress={() => navigation.navigate ('TelaInicial')} />
+      <Button title="Home" onPress={()=> navigation.navigate('Home')}/>
       <Button title="Tela2" onPress={() => navigation.navigate('Screen2')} />
       <Button title="Tela3" onPress={() => navigation.navigate('Screen3')} />
       <Button title="Tela4" onPress={() => navigation.navigate('Screen4')} />

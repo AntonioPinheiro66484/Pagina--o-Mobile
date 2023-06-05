@@ -1,12 +1,16 @@
 // MainPage.js
 import React from 'react';
-import { View, Text, Button } from 'react-native';
-
-function MainPage({ navigation }) {
+import { View, Text, Button, SafeAreaView } from 'react-native';
+import { StyleSheet } from 'react-native-web';
+import Header from '../components/Header'
+function AVBooks({ navigation }) {
   return (
+  <SafeAreaView>
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Header/>
       <Text>Pagina Principal</Text>
-      <Button title="Tela Inicial" onPress={() => navigation.navigate('TelaInicial')} />
+
+      <Button title="Tela Inicial" onPress={() => navigation.navigate ('TelaInicial')} />
       <Button title="Tela2" onPress={() => navigation.navigate('Screen2')} />
       <Button title="Tela3" onPress={() => navigation.navigate('Screen3')} />
       <Button title="Tela4" onPress={() => navigation.navigate('Screen4')} />
@@ -14,7 +18,18 @@ function MainPage({ navigation }) {
       <Button title="Tela6" onPress={() => navigation.navigate('Screen6')} />
       <Button title="Tela7" onPress={() => navigation.navigate('Screen7')} />
     </View>
+  </SafeAreaView>
   );
 }
 
-export default MainPage;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+
+});
+
+export default AVBooks;

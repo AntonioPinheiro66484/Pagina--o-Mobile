@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, Button, Image, StyleSheet  } from 'react-native';
 
 
-function Screen1(){
+function TelaInicial(){
   return (
     <View style={styles.container}>
       <Image
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Screen1;
+export default TelaInicial;

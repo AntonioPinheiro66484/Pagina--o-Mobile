@@ -1,30 +1,16 @@
-// Screen1.js
+// Screen2.js
 import React from 'react';
-import { View, Text, Button, Image, StyleSheet  } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
-
-function Screen1(){
+function Screen1({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Image
-        source={require('../../assets/Images/banner.png')}
-        style={styles.image}
-      />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Screen 2</Text>
+        <Button title="Proxima" onPress={() => navigation.navigate('Screen2')} />
+        <Button title="Anterior" onPress={() => navigation.navigate('MainPage')} />
+        <Button title="Principal" onPress={() => navigation.navigate('MainPage')} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  image: {
-    width: 1000,
-    height: 200,
-  },
-});
 
 export default Screen1;
